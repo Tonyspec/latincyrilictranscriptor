@@ -1,0 +1,32 @@
+{
+  "name": "english-to-russian-transcription",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "App that transcribes latin characters to cyrilic",
+  "build": {
+    "appId": "com.tonyscpecDev.engtorus",
+    "asar": true,
+    "productName": "EngToRusTranscription",
+    "files": [
+    "main.js",
+    "renderer.js",
+    "index.html",
+    "package.json"
+    ],
+    "mac": {
+      "identity": null,
+      "target": "dmg"
+    }
+  },
+  "devDependencies": {
+    "electron": "^34.0.1",
+    "electron-builder": "^25.1.8"
+  }
+}
